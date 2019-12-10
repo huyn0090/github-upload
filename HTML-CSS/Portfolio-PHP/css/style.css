@@ -1,0 +1,585 @@
+/* 
+    CSS RESET
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+            /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+            [                                                            ]
+            [                      FOR MOBILE RESPONSIVE                 ]
+            [                                                            ]
+            ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+
+*, :after, *:before {
+    box-sizing: border-box;
+}
+
+body{
+    background: #f6f6f6;;
+    color: white;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+.header-wrap {
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+
+  
+}
+
+.header-wrap .title{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.header-wrap .title a{
+    font-size: 35px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 200;
+}
+
+
+#display_menu {
+  cursor: pointer;
+  position: relative;
+  margin: 0px auto;
+  margin-left: 90%;
+}
+
+#menu-popup{
+  padding: 50px;
+  text-align: center;
+  background: rgba(255, 255, 255, 1);
+  width: 100%;
+  margin: 80px auto;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+    
+}
+
+#menu-popup ul{
+  list-style: none;
+  margin-bottom: 40px;
+
+}
+
+
+#menu-popup ul li a{
+  list-style: none;
+  color: grey;
+  text-decoration: none;
+  line-height: 3em;
+  font-size: 30px;
+  font-weight: 200;
+
+}
+
+
+.menu-bar1,
+.menu-bar2,
+.menu-bar3{
+  width: 35px;
+  height: 5px;
+  background-color: grey;
+  margin: 6px 0;
+  transition: 0.5s;
+}
+
+.change .menu-bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .menu-bar2 {opacity: 0;}
+.change .menu-bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.social-bar{
+    margin-top: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+
+ .social-bar i{
+     color: black; 
+     margin-right: 20px;
+ }
+
+ .social-bar i:hover{
+     color: gray;
+   
+ }
+
+
+.title .logo{
+    width: 30px;
+    height: 30px;
+    margin: 20px auto;
+}
+
+.thumb1{
+    box-sizing: border-box;
+    border: solid .5px grey;
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    background: grey;
+  
+}
+
+.project-heading h1{
+    text-align: center;
+    color: gray;
+    font-size: 2em;
+}
+
+.project-heading hr{
+    width: 40%;
+    margin: 15px auto;
+    height: 0.5px;
+}
+
+.products-box{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+ 
+}
+
+.subbox{
+    max-width: 350px;
+    max-height: 350px;
+    box-sizing: border-box;
+    border: solid .5px white;
+    margin: 5px auto;
+}
+
+.subbox:hover{
+    opacity: .5;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.sub-box > img{
+    object-fit: cover;
+    max-height: 350px;
+    max-height: 350px;
+    min-width: 100%;
+      
+}
+
+.heading-1{
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.heading-1 h1{
+    font-size: 4rem;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-left: 15px;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+.heading-1 h2{
+    font-size: 5rem;
+    color: grey;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 70px;
+}
+
+.subtitle h4, p{
+    color: #000;
+}
+
+.subtitle{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 50px auto;
+    
+}
+
+em{
+    font-style: italic;;
+}
+.line{
+    width: 80%;
+    margin-left: 30%;
+}
+
+.sub-texts h4{
+    font-size: 2rem;
+}
+
+.sub-texts p{
+    font-size: 20px;
+    line-height: 2.2rem;
+    margin: 15px auto;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.bio{
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border: solid white .5px;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.bio img{
+    object-fit: cover;
+    max-height:200px;
+    min-height: 200px;
+    min-width: 100%;
+    border-radius: 100%;
+}
+
+footer{
+    background-color: black;
+    padding: 30px;
+}
+
+.bot-info{
+    width: 80%;
+    margin-left: 20px;
+}
+.bot-info p, h1{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    
+}
+
+
+/* THIS IS FEED BOXES */
+.feeds{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.feed-sub h1{
+    font-size: 4em;
+    color: gray;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+
+.feed-sub h2{
+    font-size: 3em;
+    color: darkgray;
+    font-family:"Avenir Next", "Avenir", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: right;
+    margin: 0 10px;
+
+}
+
+.feed-1,
+.feed-2,
+.feed-3,
+.feed-4,
+.feed-5,
+.feed-6{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.feed-box img{
+    object-fit: cover;
+    max-height:300px;
+    min-height: 300px;
+    min-width: 100%;
+}
+
+.feed-box:hover{
+    opacity: .5;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.subs{
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.feeds .subs > h1{
+    color: black;
+    text-align: center;
+    font-family:"Avenir Next", "Avenir", sans-serif;
+    font-size: 2em;
+    margin-top: 20px;;
+}
+
+.subs p{
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.feed-box{
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: solid .5px white;
+    width: 300px;
+    height: 300px;
+
+}
+
+
+/* THIS IS TABLET */
+
+@media screen and (min-width: 768px){
+    #display_menu{
+        margin-left: 95%;
+    }
+
+    .subtitle{
+        width: 80%;
+        padding: 30px;
+    }
+
+    .heading-1{
+        margin: 0 10px;
+    }
+
+    .heading-1 h2{
+        margin-left: 120px;
+
+    }
+
+    .feed-sub h1{
+        text-align: left;
+        margin-left: 30%;
+    }
+
+    .feed-sub h2{
+        text-align: center;
+    }
+
+    .feeds{
+        width: 90%;
+        overflow: scroll;
+        flex-direction: row;
+        justify-content: flex-start;
+
+    }
+
+    .products-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 30px;
+     
+    }
+
+    .sub-box > img{
+        object-fit: cover;
+        max-height: 250px;
+        min-height: 250px;
+        min-width: 100%;
+          
+    }
+
+    .subbox{
+        width: 250px;
+        height: 250px;
+    }
+
+    
+
+}
+
+@media screen and (min-width: 1200px){
+    .subtitle{
+        width: 70%;
+    }
+
+    .social-bar{
+        display: none;
+    }
+
+    .heading-1{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .feed-sub{
+        width: 40%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .project-heading{
+        margin: 30px auto;
+    }
+
+    .products-box{
+        width: 60%;
+    }
+
+    .hidden{
+       display: block;
+    }
+
+    #menu-popup{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: none;
+        position: relative;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    #menu-popup ul{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+    
+    }
+
+    #menu-popup ul li{
+        margin-left: 20px;
+    }
+
+
+    .display_menu{
+        display: none;
+    }
+
+    .menu-bar1,
+    .menu-bar2,
+    .menu-bar3{
+    display: none;
+    }
+
+    .bot-info{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
